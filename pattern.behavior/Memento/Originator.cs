@@ -1,20 +1,39 @@
+using System.Collections.Generic;
+
 namespace pattern.behavior
 {
+    
     partial class Memento
     {
-        class Originator
+        public class Originator
         {
-            public Memento CreateMemento()
+            public Originator()
             {
-                return new Memento() { State = _state };
+                Initialize();
+            }
+            
+            public Originator(object o)
+            {
+                Initialize();
+                _state.PropertyUpdate[nameof(o)] = o;
             }
 
-            public void SetMemento(Memento memento)
+            private void Initialize()
             {
-                _state = memento.State;
+                _state = new State() { PropertyUpdate = new Dictionary<string, object>() };
+            }
+            
+            public virtual Memento CreateMemento()
+            {
+                return new Memento(_state);
             }
 
-            private State _state;
+            public virtual void SetMemento(Memento memento)
+            {
+                _state = memento._state;
+            }
+
+            protected State _state;
         }
     }
 }

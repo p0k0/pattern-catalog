@@ -2,15 +2,10 @@
 
 namespace pattern.behavior
 {
-    partial class Memento
+    public partial class Memento
     {
-        private Memento() {}
+        private Memento(State state) { _state = state; }
 
         private State _state;
-        protected State State
-        {
-            get { return _state; }
-            set { _state = value; }
-        }
     }
 }

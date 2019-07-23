@@ -3,6 +3,8 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # 
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "pattern.behavior", "pattern.behavior\pattern.behavior.csproj", "{75C345F1-2D8F-4CE9-AA10-B9605F8A8619}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "pattern.behavior.test", "pattern.behavior.test\pattern.behavior.test.csproj", "{443E5AF8-D1D5-4AB5-BBC1-9F605CDD59C3}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -13,5 +15,9 @@ Global
 		{75C345F1-2D8F-4CE9-AA10-B9605F8A8619}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{75C345F1-2D8F-4CE9-AA10-B9605F8A8619}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{75C345F1-2D8F-4CE9-AA10-B9605F8A8619}.Release|Any CPU.Build.0 = Release|Any CPU
+		{443E5AF8-D1D5-4AB5-BBC1-9F605CDD59C3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{443E5AF8-D1D5-4AB5-BBC1-9F605CDD59C3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{443E5AF8-D1D5-4AB5-BBC1-9F605CDD59C3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{443E5AF8-D1D5-4AB5-BBC1-9F605CDD59C3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
